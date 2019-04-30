@@ -15,7 +15,7 @@
   "typings": "./electron-log.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/megahertz/electron-log.git"
+    "url": "git+https://github.com/input-output-hk/electron-log-daedalus.git"
   },
   "files": [
     "index.js",
