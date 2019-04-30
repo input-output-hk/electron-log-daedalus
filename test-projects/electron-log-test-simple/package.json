@@ -7,6 +7,6 @@
     "start": "electron ./main.js"
   },
   "devDependencies": {
-    "electron": "*"
+    "electron": "3.1.8"
   }
 }

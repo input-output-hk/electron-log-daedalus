@@ -35,7 +35,7 @@ module.exports = {
     }
 
     return new Promise((resolve, reject) => {
-      const cmd = process.platform === 'win32' ? 'rd /s /q' : 'rm -r';
+      const cmd = process.platform === 'win32' ? 'rd /s /q' : 'rm -rf';
       exec(`${cmd} ${logDir}`, (error, stdout, stderr) => {
         if (error) {
           console.warn(error.message);
