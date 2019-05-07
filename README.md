@@ -135,6 +135,13 @@ inside the main process.
 
 ## Change Log
 
+**2.2.18**
+
+- Fixed a limitation of log file naming + log rotation feature.
+  Before it was not possible to have any other file extension than
+  `.log` for the log rotation feature to work. Now it's possible to
+  use any file extension.
+
 **2.1.0**
  - Add Renderer Console transport
 
