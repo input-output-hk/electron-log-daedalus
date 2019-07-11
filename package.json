@@ -39,7 +39,8 @@
   ],
   "author": "Alexey Prokhorov",
   "contributors": [
-    "Dominik Guzei"
+    "Dominik Guzei",
+    "Yakov Karavelov"
   ],
   "license": "MIT",
   "devDependencies": {
