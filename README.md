@@ -102,6 +102,13 @@ log.transports.file.format = '{h}:{i}:{s}:{ms} {text}';
 // the archived log will be saved as the log.old.log file
 log.transports.file.maxSize = 5 * 1024 * 1024;
 
+// Set maximum log files count. When it exceeds,
+// oldest old log file is deleted.
+log.transports.file.maxItems = 4;
+
+// Set timestamp format postfixed to log file.
+log.transports.file.timeStampPostfixFormat = '{y}{m}{d}{h}{i}{s}';
+
 // Write to this file, must be set before first logging
 log.transports.file.file = __dirname + '/log.txt';
 
@@ -134,6 +141,14 @@ but please be aware that transport configuration is available only
 inside the main process.
 
 ## Change Log
+
+**2.2.19**
+
+- Enabled log file rotation.
+  By default log file is archived with datetimestamp postfixed to the log file name when max size limit is reached.
+  When total number of files including active and archived log files is exceeded transports.file.maxItems, oldest old log file is deleted and this is repeated.
+- Enabled configuring datetimestamp postfix format attached to archived log file by using transports.file.timeStampPostfixFormat.
+  Here datetimestamp values are all refering UTC time values.
 
 **2.2.18**
 
