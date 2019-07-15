@@ -142,6 +142,10 @@ inside the main process.
 
 ## Change Log
 
+**2.2.20**
+
+- Fixed file and folder path handling part using path pacakge.
+
 **2.2.19**
 
 - Enabled log file rotation.
