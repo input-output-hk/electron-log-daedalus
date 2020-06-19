@@ -36,7 +36,7 @@ module.exports.default = module.exports;
 
 if (electron && electron.ipcMain) {
   electron.ipcMain.on('__ELECTRON_LOG__', onRendererLog);
-  var appName = electron.app.getName();
+  var appName = electron.app.name;
   if (appName !== 'Electron') {
     transportFile.appName = appName;
   }
